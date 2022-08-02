@@ -9,14 +9,12 @@ let getQty = document.querySelector(".total-quantity");
  
 function incrementCart() {
     numQty++;
-console.log(`Quantity: ${numQty}`);
 getQty.innerHTML = `Quantity: ${numQty}`;
 }
 
 function decrementCart() {
     if (numQty===0) return 0;
     numQty--;
-console.log(`Quantity: ${numQty}`);
 getQty.innerHTML = `Quantity: ${numQty}`;
 
 }
